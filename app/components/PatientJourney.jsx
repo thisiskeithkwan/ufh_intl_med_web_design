@@ -1,8 +1,8 @@
-import { ArrowDownIcon, VideoIcon, ClipboardListIcon, CalendarIcon, FileTextIcon, PlaneIcon, BuildingHospitalIcon, HeartPulseIcon, ArrowRight } from "lucide-react"
+import { ArrowDownIcon, VideoIcon, ClipboardListIcon, CalendarIcon, FileTextIcon, PlaneIcon, Hospital, HeartPulseIcon, ArrowRight, PhoneCall, Mail } from "lucide-react"
 import { motion } from "framer-motion"
 
 const ProcessStep = ({ step, index, isLast }) => (
-  <div className="flex flex-col items-center mb-8 last:mb-0 relative">
+  <div className="flex flex-col items-center mb-6 last:mb-0 relative">
     <motion.div
       className="w-16 h-16 rounded-full bg-[#003A8C] flex items-center justify-center z-10"
       initial={{ opacity: 0, scale: 0 }}
@@ -56,16 +56,16 @@ export default function PatientJourney() {
 
   const overseasTreatmentSteps = [
     { title: "咨询", description: "提交病历，签署协议", icon: FileTextIcon },
-    { title: "医疗记录", description: "整理和翻��医疗记录", icon: ClipboardListIcon },
-    { title: "医生预约", description: "推荐并确认海外医院/专科医生", icon: CalendarIcon },
+    { title: "医疗记录", description: "整理和翻译医疗记录", icon: ClipboardListIcon },
+    { title: "医生约", description: "推荐并确认海外医院/专科医生", icon: CalendarIcon },
     { title: "签证处理", description: "协助医疗签证申请和面试", icon: FileTextIcon },
     { title: "旅行安排", description: "预订旅行、住宿，安排翻译", icon: PlaneIcon },
-    { title: "海外治疗", description: "本地支持，医疗治疗", icon: BuildingHospitalIcon },
+    { title: "海外治疗", description: "本地支持，医疗治疗", icon: Hospital },
     { title: "后续跟进", description: "返回协助，持续医疗支持", icon: HeartPulseIcon },
   ]
 
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-white py-16">
       <div className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-4xl font-bold text-[#003A8C] mb-8 text-center">国际医疗服务患者旅程</h2>
         <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -77,7 +77,7 @@ export default function PatientJourney() {
           <ProcessCard title="海外医疗治疗流程" steps={overseasTreatmentSteps} />
         </div>
 
-        <div className="text-center">
+        <div className="text-center space-y-4">
           <a
             href="#contact"
             className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-semibold rounded-full text-white bg-[#003A8C] hover:bg-[#002a66] transition duration-300"
@@ -85,6 +85,28 @@ export default function PatientJourney() {
             开始您的旅程
             <ArrowRight className="ml-2 w-5 h-5" />
           </a>
+          
+          <div className="flex justify-center space-x-4">
+            <a
+              href="tel:+1234567890"
+              className="inline-flex items-center px-6 py-3 border border-[#003A8C] text-[#003A8C] text-base font-medium rounded-full hover:bg-[#003A8C] hover:text-white transition duration-300"
+            >
+              <PhoneCall className="mr-2 w-5 h-5" />
+              电话咨询
+            </a>
+            <a
+              href="mailto:info@example.com"
+              className="inline-flex items-center px-6 py-3 border border-[#003A8C] text-[#003A8C] text-base font-medium rounded-full hover:bg-[#003A8C] hover:text-white transition duration-300"
+            >
+              <Mail className="mr-2 w-5 h-5" />
+              发送邮件
+            </a>
+          </div>
+          
+          <p className="text-sm text-gray-600 mt-4">
+            需要更多信息？ 
+            <a href="#faq" className="text-[#003A8C] hover:underline">查看常见问题</a>
+          </p>
         </div>
       </div>
     </div>
