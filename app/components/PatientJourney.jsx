@@ -84,11 +84,6 @@ export default function PatientJourney() {
             咨询详情
             <ArrowRight className="ml-2 w-5 h-5" />
           </a>
-          
-          <p className="text-sm text-gray-600 mt-4">
-            需要更多信息？ 
-            <a href="#faq" className="text-[#003A8C] hover:underline">查看常见问题</a>
-          </p>
         </div>
       </div>
     </div>
