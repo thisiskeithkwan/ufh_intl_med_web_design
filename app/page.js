@@ -14,24 +14,18 @@ export default function Component() {
 
       {/* Hero Section - Blue background with image overlay */}
       <div className="relative bg-[#4169E1] py-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/hero-background.jpg" 
-            alt="Medical Background" 
-            className="w-full h-full object-cover opacity-20"
-          />
-        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2 text-white">
               <h1 className="text-5xl font-bold mb-6 leading-tight">链接全球顶级癌症诊疗资源</h1>
               <p className="text-xl mb-8">
-                和睦家医疗提供一站式解决方案，让您的康复之旅更有效率。<br/>我们汇集全球顶尖专家，为您提供个性化的诊疗方案。
+
+                和睦家国际医疗提供一站式解决方案<br/>助你寻求全球肿瘤治疗最佳方案以及资源<br/>
               </p>
               <ul className="mb-10 space-y-4">
                 {[
-                  "全球顶级肿瘤专家智慧",
-                  "权威二次诊断",
+                  "链接全球顶级肿瘤诊疗资源",
+                  "权威第二意见",
                   "国内医院网络配套",
                   "出国就医安排"
                 ].map((item, index) => (
