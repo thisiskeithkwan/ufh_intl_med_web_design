@@ -1,4 +1,4 @@
-import { ArrowDownIcon, VideoIcon, ClipboardListIcon, CalendarIcon, FileTextIcon, PlaneIcon, Hospital, HeartPulseIcon, ArrowRight, PhoneCall, Mail } from "lucide-react"
+import { ArrowDownIcon, VideoIcon, ClipboardListIcon, CalendarIcon, FileTextIcon, PlaneIcon, Hospital, HeartPulseIcon, ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
 
 const ProcessStep = ({ step, index, isLast }) => (
@@ -48,33 +48,32 @@ const ProcessCard = ({ title, steps }) => (
 
 export default function PatientJourney() {
   const remoteConsultationSteps = [
-    { title: "服务咨询", description: "一对一免费在线咨询，专家匹配", icon: VideoIcon },
-    { title: "医疗记录", description: "收集、整理和审查医疗记录", icon: ClipboardListIcon },
-    { title: "预约安排", description: "发送信息，匹配海外医生", icon: CalendarIcon },
-    { title: "视频咨询", description: "在线咨询，提供翻译和解释服务", icon: FileTextIcon },
+    { title: "初步咨询", description: "与我们的医疗顾问进行免费在线咨询", icon: VideoIcon },
+    { title: "医疗记录审核", description: "协助收集和审查您的医疗记录", icon: ClipboardListIcon },
+    { title: "专家匹配", description: "为您匹配合适的国际专家", icon: CalendarIcon },
+    { title: "远程会诊安排", description: "协调安排在线视频咨询，提供翻译服务", icon: FileTextIcon },
   ]
 
   const overseasTreatmentSteps = [
-    { title: "咨询", description: "提交病历，签署协议", icon: FileTextIcon },
-    { title: "医疗记录", description: "整理和翻译医疗记录", icon: ClipboardListIcon },
-    { title: "医生约", description: "推荐并确认海外医院/专科医生", icon: CalendarIcon },
-    { title: "签证处理", description: "协助医疗签证申请和面试", icon: FileTextIcon },
-    { title: "旅行安排", description: "预订旅行、住宿，安排翻译", icon: PlaneIcon },
-    { title: "海外治疗", description: "本地支持，医疗治疗", icon: Hospital },
-    { title: "后续跟进", description: "返回协助，持续医疗支持", icon: HeartPulseIcon },
+    { title: "需求评估", description: "详细了解您的医疗需求，提供初步建议", icon: FileTextIcon },
+    { title: "医疗档案准备", description: "协助整理和翻译您的医疗记录", icon: ClipboardListIcon },
+    { title: "医院和医生推荐", description: "推荐适合的海外医院和专科医生", icon: Hospital },
+    { title: "行程规划", description: "协助安排签证、旅行和住宿", icon: PlaneIcon },
+    { title: "治疗协调", description: "全程协调您的海外治疗流程", icon: HeartPulseIcon },
+    { title: "后续跟进", description: "提供返回后的持续医疗支持", icon: CalendarIcon },
   ]
 
   return (
     <div className="bg-white py-16">
       <div className="container mx-auto px-4 max-w-6xl">
-        <h2 className="text-4xl font-bold text-[#003A8C] mb-8 text-center">国际医疗服务患者旅程</h2>
+        <h2 className="text-4xl font-bold text-[#003A8C] mb-8 text-center">国际医疗服务流程</h2>
         <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          体验我们全面的远程咨询和海外医疗治疗服务，获得世界级的医疗保健。
+          我们致力于为您提供高质量的远程咨询和海外医疗治疗服务，帮助您连接世界级的医疗资源。
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <ProcessCard title="远程咨询流程" steps={remoteConsultationSteps} />
-          <ProcessCard title="海外医疗治疗流程" steps={overseasTreatmentSteps} />
+          <ProcessCard title="远程咨询服务" steps={remoteConsultationSteps} />
+          <ProcessCard title="海外就医服务" steps={overseasTreatmentSteps} />
         </div>
 
         <div className="text-center space-y-4">
@@ -82,11 +81,9 @@ export default function PatientJourney() {
             href="#contact"
             className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-semibold rounded-full text-white bg-[#003A8C] hover:bg-[#002a66] transition duration-300"
           >
-            开始您的旅程
+            咨询详情
             <ArrowRight className="ml-2 w-5 h-5" />
           </a>
-          
-
           
           <p className="text-sm text-gray-600 mt-4">
             需要更多信息？ 

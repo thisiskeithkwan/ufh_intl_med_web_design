@@ -38,7 +38,7 @@ const PartnerInstitutionsBanner = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 800); // Rotate every 2 seconds
+    const interval = setInterval(nextSlide, 1800); // Rotate every 2 seconds
     return () => clearInterval(interval);
   }, []);
 
@@ -77,8 +77,8 @@ const PartnerInstitutionsBanner = () => {
                       alt={institution.name}
                       className="w-full h-20 object-contain mb-2"
                     />
-                    <p className="text-sm text-center text-gray-600 font-semibold">{institution.name}</p>
-                    <p className="text-xs text-center text-gray-500">{institution.country}</p>
+                    <p className="text-sm text-left w-full text-gray-600 font-semibold">{institution.name}</p>
+                    <p className="text-xs text-left w-full text-gray-500">{institution.country}</p>
                   </div>
                 ))}
               </motion.div>
