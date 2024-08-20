@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 const ProcessStep = ({ step, index, isLast }) => (
   <div className="flex flex-col items-center mb-6 last:mb-0 relative">
     <motion.div
-      className="w-16 h-16 rounded-full bg-[#003A8C] flex items-center justify-center z-10"
+      className="w-16 h-16 bg-[#0669f2] flex items-center justify-center z-10"
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: index * 0.1 }}
@@ -17,8 +17,8 @@ const ProcessStep = ({ step, index, isLast }) => (
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 + 0.1 }}
     >
-      <h3 className="font-semibold text-[#003A8C] text-lg mb-1">{step.title}</h3>
-      <p className="text-gray-600 text-sm">{step.description}</p>
+      <h3 className="font-semibold text-[#0669f2] text-lg mb-1" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>{step.title}</h3>
+      <p className="text-gray-600 text-sm" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>{step.description}</p>
     </motion.div>
     {!isLast && (
       <motion.div 
@@ -27,16 +27,16 @@ const ProcessStep = ({ step, index, isLast }) => (
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: index * 0.1 + 0.2, duration: 0.5 }}
       >
-        <ArrowDownIcon className="w-6 h-6 text-[#003A8C]" />
+        <ArrowDownIcon className="w-6 h-6 text-[#0669f2]" />
       </motion.div>
     )}
   </div>
 )
 
 const ProcessCard = ({ title, steps }) => (
-  <div className="bg-white rounded-lg shadow-md overflow-hidden">
-    <div className="bg-[#003A8C] p-6">
-      <h2 className="text-2xl font-bold text-white text-center">{title}</h2>
+  <div className="bg-white shadow-md overflow-hidden">
+    <div className="bg-[#0669f2] p-6">
+      <h2 className="text-2xl font-bold text-white text-center" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>{title}</h2>
     </div>
     <div className="p-6">
       {steps.map((step, index) => (
@@ -66,8 +66,8 @@ export default function PatientJourney() {
   return (
     <div className="bg-white py-16">
       <div className="container mx-auto px-4 max-w-6xl">
-        <h2 className="text-4xl font-bold text-[#003A8C] mb-8 text-center">国际医疗服务流程</h2>
-        <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+        <h2 className="text-4xl font-bold text-[#0669f2] mb-8 text-center" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>国际医疗服务流程</h2>
+        <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>
           我们致力于为您提供高质量的远程咨询和海外医疗治疗服务，帮助您连接世界级的医疗资源。
         </p>
 
@@ -79,7 +79,8 @@ export default function PatientJourney() {
         <div className="text-center space-y-4">
           <a
             href="#contact"
-            className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-semibold rounded-full text-white bg-[#003A8C] hover:bg-[#002a66] transition duration-300"
+            className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-semibold text-white bg-[#0669f2] hover:bg-opacity-90 transition duration-300"
+            style={{ fontFamily: 'Moderat, sans-serif' }}
           >
             咨询详情
             <ArrowRight className="ml-2 w-5 h-5" />

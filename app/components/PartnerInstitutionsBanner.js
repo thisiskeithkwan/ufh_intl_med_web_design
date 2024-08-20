@@ -38,7 +38,7 @@ const PartnerInstitutionsBanner = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 1800); // Rotate every 2 seconds
+    const interval = setInterval(nextSlide, 1800); // Rotate every 1.8 seconds
     return () => clearInterval(interval);
   }, []);
 
@@ -48,11 +48,11 @@ const PartnerInstitutionsBanner = () => {
   ].slice(0, itemsPerPage);
 
   return (
-    <div className="relative overflow-hidden py-12 bg-white">
+    <div className="relative overflow-hidden py-12 bg-[#f4f7fe]">
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center">
           <button onClick={prevSlide} className="p-2 rounded-full bg-white shadow-md hover:bg-gray-100 mr-4 focus:outline-none">
-            <ChevronLeft className="w-6 h-6 text-gray-600" />
+            <ChevronLeft className="w-6 h-6 text-[#0669f2]" />
           </button>
           <div className="overflow-hidden w-[900px] h-[150px]">
             <AnimatePresence initial={false} custom={direction}>
@@ -67,7 +67,7 @@ const PartnerInstitutionsBanner = () => {
                 initial="enter"
                 animate="center"
                 exit="exit"
-                transition={{ duration: 0.3 }} // Faster transition
+                transition={{ duration: 0.3 }}
                 className="flex justify-center items-center"
               >
                 {visibleInstitutions.map((institution, index) => (
@@ -77,15 +77,15 @@ const PartnerInstitutionsBanner = () => {
                       alt={institution.name}
                       className="w-full h-20 object-contain mb-2"
                     />
-                    <p className="text-sm text-left w-full text-gray-600 font-semibold">{institution.name}</p>
-                    <p className="text-xs text-left w-full text-gray-500">{institution.country}</p>
+                    <p className="text-sm text-left w-full text-gray-600 font-semibold" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>{institution.name}</p>
+                    <p className="text-xs text-left w-full text-gray-500" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>{institution.country}</p>
                   </div>
                 ))}
               </motion.div>
             </AnimatePresence>
           </div>
           <button onClick={nextSlide} className="p-2 rounded-full bg-white shadow-md hover:bg-gray-100 ml-4 focus:outline-none">
-            <ChevronRight className="w-6 h-6 text-gray-600" />
+            <ChevronRight className="w-6 h-6 text-[#0669f2]" />
           </button>
         </div>
       </div>
