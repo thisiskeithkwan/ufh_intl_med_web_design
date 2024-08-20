@@ -86,22 +86,7 @@ export default function PatientJourney() {
             <ArrowRight className="ml-2 w-5 h-5" />
           </a>
           
-          <div className="flex justify-center space-x-4">
-            <a
-              href="tel:+1234567890"
-              className="inline-flex items-center px-6 py-3 border border-[#003A8C] text-[#003A8C] text-base font-medium rounded-full hover:bg-[#003A8C] hover:text-white transition duration-300"
-            >
-              <PhoneCall className="mr-2 w-5 h-5" />
-              电话咨询
-            </a>
-            <a
-              href="mailto:info@example.com"
-              className="inline-flex items-center px-6 py-3 border border-[#003A8C] text-[#003A8C] text-base font-medium rounded-full hover:bg-[#003A8C] hover:text-white transition duration-300"
-            >
-              <Mail className="mr-2 w-5 h-5" />
-              发送邮件
-            </a>
-          </div>
+
           
           <p className="text-sm text-gray-600 mt-4">
             需要更多信息？ 
