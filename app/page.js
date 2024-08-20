@@ -24,7 +24,7 @@ export default function Component() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2 text-white">
-              <h1 className="text-5xl font-bold mb-6 leading-tight">链接全球顶级癌症诊疗资源</h1>
+              <h1 className="text-5xl font-bold mb-6 leading-tight">全球顶级癌症诊疗，为您定制康复方案</h1>
               <p className="text-xl mb-8">
                 和睦家医疗提供一站式解决方案，让您的康复之旅更有效率。我们汇集全球顶尖专家，为您提供个性化的诊疗方案。
               </p>
@@ -123,7 +123,7 @@ export default function Component() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="lg:w-1/2">
               <p className="text-lg mb-6 text-gray-700">
-                我���的本地医生与患者和国际专家无缝协调，确保在整个治疗过程中提供持续支持和清晰沟通。
+                我们的本地医生与患者和国际专家无缝协调，确保在整个治疗过程中提供持续支持和清晰沟通。
               </p>
               <p className="text-lg mb-6 text-gray-700">
                 依托和睦家遍布中国的医疗网络，我们提供从出国前体检项目、陪诊到回国后的跟进服务的全程支持，确保您在整个医疗旅程中得到全面的本地化服务。
@@ -150,7 +150,7 @@ export default function Component() {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="/images/beijing_ufh_map.png" 
+                  src="/images/ufh-logo.png" 
                   alt="和睦家医院地图" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -252,7 +252,7 @@ export default function Component() {
               { icon: Home, title: "豪华住宿预订", desc: "甄选临近医疗机构的高端酒店或公寓" },
               { icon: Car, title: "VIP机场接送", desc: "私人司机全程接送，尊享无缝衔接的旅程" },
               { icon: MessageSquare, title: "专业翻译陪同", desc: "医疗专业翻译全程陪同，确保沟通无障碍" },
-              { icon: Coffee, title: "个性化餐饮安排", desc: "根据您的饮食需求和喜好，提供定制餐饮服���" },
+              { icon: Coffee, title: "个性化餐饮安排", desc: "根据您的饮食需求和喜好，提供定制餐饮服" },
               { icon: PhoneCall, title: "24/7紧急支援", desc: "全天候待命，随时解决您的任何问题或需求" }
             ].map((service, index) => (
               <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300">
