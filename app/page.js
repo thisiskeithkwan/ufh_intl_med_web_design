@@ -109,26 +109,52 @@ export default function Component() {
       {/* Our Services Section */}
       <div className="bg-white py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-[#0669f2] mb-12 text-center" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>我们的服务</h2>
+          <h2 className="text-4xl font-bold text-[#0669f2] mb-6 text-center" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>我们的服务</h2>
+          <p className="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>
+            和疗致力于为您提供全面的医疗服务，从远程会诊到出国就医，再到全球药品采购。我们的专业团队将全程陪伴您的医疗旅程，确保您获得最优质的医疗资源和个性化的照护。
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "远程会诊",
-                description: "我们为您安排与国际顶级专家进行远程视频咨询。这种便捷的方式让您无需出国，即可获得世界级专的建议，特别适合需要快速诊断或持续随访的患者。",
+                title: "远程癌症会诊",
+                description: "我们为您安排与国际顶级癌症专家进行远程视频咨询。这种便捷的方式让您无需出国，即可获得世界级肿瘤专家的专业意见。无论您是刚被诊断、正在接受治疗，还是在寻求进一步的治疗方案，我们的服务都能为您提供宝贵的第二诊疗意见。远程会诊不仅节省了您的时间和费用，还让您能在舒适的环境中获得个性化的癌症诊疗建议。",
                 icon: Video,
-                details: ["高质量视频咨询", "专业医疗翻译", "安全的医疗信息传输", "灵活预约，全程协调"]
+                details: [
+                  "高质量视频咨询，确保与癌症专家的清晰沟通",
+                  "专业医疗翻译，消除与国际肿瘤专家的语言障碍",
+                  "安全的医疗信息传输，保护您的隐私和敏感的癌症相关数据",
+                  "灵活预约，全程协调，适应您的时间安排",
+                  "详细的癌症会诊报告和个性化治疗建议",
+                  "与本地肿瘤医生的无缝对接，协助制定或优化治疗方案"
+                ]
               },
               {
-                title: "出国就医",
-                description: "如果您需要在海外接受治疗，我们的专业团队将协助您完成从签证申请到医院预约的全过程。我们多家国际知名医疗机构直接合作，确保您能快速获得最佳治疗方案。",
+                title: "海外癌症治疗",
+                description: "如果您需要在海外接受先进的癌症治疗，我们的专业团队将协助您完成从签证申请到医院预约的全过程。我们与多家国际知名肿瘤医疗中心直接合作，确保您能快速获得最佳的个性化癌症治疗方案。我们的服务不仅包括专业的医疗安排，还涵盖了全面的旅行支持，让您的海外抗癌之旅无忧无虑。",
                 icon: Plane,
-                details: ["快速医疗签证办", "国际医疗机构直接预约", "全程医疗翻陪同", "跨境医疗保险协调"]
+                details: [
+                  "加急医疗签证办理，缩短癌症患者的等待时间",
+                  "国际顶级肿瘤医疗中心直接预约，优先安排会诊和治疗",
+                  "专业肿瘤医疗翻译全程陪同，确保与医疗团队沟通顺畅",
+                  "跨境癌症医疗保险协调，最大化您的治疗保障",
+                  "个性化癌症治疗方案制定和长期跟进",
+                  "适合癌症患者的海外住宿和特殊交通安排，全方位照顾",
+                  "癌症相关紧急情况处理和24/7专业医疗支持"
+                ]
               },
               {
-                title: "药品采购",
-                description: "我们帮助患者在全球范围内搜寻和获取最新、最有效的药品。无论是尚未在国上的创新药物，还是临床试验中的实验性药品，我们都能为您提供专业的搜寻和采购服务。",
+                title: "抗癌药品采购",
+                description: "我们帮助癌症患者在全球范围内搜寻和获取最新、最有效的抗癌药物。无论是尚未在国内上市的创新肿瘤靶向药物，还是临床试验中的实验性免疫疗法，我们都能为您提供专业的搜寻和采购服务。我们的肿瘤专家团队将评估您的具体病情和需求，确保您能获得最适合的个性化癌症药物治疗方案。",
                 icon: Globe,
-                details: ["全球药数据库检索", "新药临床试验信息", "药品进口手续办理", "个性化用药建议"]
+                details: [
+                  "全球抗癌药品数据库检索，找到最适合您病情的药物",
+                  "最新肿瘤临床试验信息更新，掌握前沿癌症治疗动向",
+                  "海外抗癌药品进口手续办理，简化复杂流程",
+                  "和睦家医院网络配套，确保用药安全和有效性",
+                  "个性化癌症用药方案制定和长期跟踪管理服务",
+                  "抗癌药物副作用管理和生活质量改善建议",
+                  "癌症患者营养支持和辅助用药指导"
+                ]
               }
             ].map((service, index) => (
               <div key={index} className="bg-white p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
@@ -161,13 +187,21 @@ export default function Component() {
             <div className="bg-white p-8">
               <h2 className="text-4xl font-bold mb-8 text-[#0669f2]" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>全程诊疗支持配套</h2>
               <p className="text-lg mb-6 text-gray-700" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>
-                依托和睦家遍布中国的20多家医院的医疗网络，我们���供从出国前准备到回国的跟进服务的全程支持，确保您在整个医疗旅程中得到全面的本地化服务。
+                依托和睦家遍布中国的20多家医院的医疗网络，我们供从出国前准备到回国的跟进服务的全程支持，确保您在整个医疗旅程中得到全面的本地化服务。
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-[#f0f7ff] p-4">
-                  <h3 className="text-xl font-semibold text-[#0669f2] mb-3" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>出国就医前</h3>
+                  <h3 className="text-xl font-semibold text-[#0669f2] mb-3" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>海外癌症治疗前</h3>
                   <ul className="space-y-2">
-                    {["全面体检项目", "影像学检查", "实验室检测", "医疗记录翻译"].map((item, index) => (
+                    {[
+                      "肿瘤标志物全面检测",
+                      "癌症分期精确评估",
+                      "基因突变检测",
+                      "PET-CT全身扫描",
+                      "病理样本复核",
+                      "既往治疗效果评估",
+                      "癌症病历翻译整理"
+                    ].map((item, index) => (
                       <li key={index} className="flex items-center">
                         <CheckCircle className="w-5 h-5 text-[#0669f2] mr-2" />
                         <span style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>{item}</span>
@@ -176,9 +210,17 @@ export default function Component() {
                   </ul>
                 </div>
                 <div className="bg-[#f0f7ff] p-4">
-                  <h3 className="text-xl font-semibold text-[#0669f2] mb-3" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>出国就医后</h3>
+                  <h3 className="text-xl font-semibold text-[#0669f2] mb-3" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>海外癌症治疗后</h3>
                   <ul className="space-y-2">
-                    {["结果解读", "后续治疗安排", "康复指导", "定期访"].map((item, index) => (
+                    {[
+                      "治疗方案详细解读",
+                      "后续靶向药物安排",
+                      "免疫治疗反应监测",
+                      "放化疗后康复指导",
+                      "营养方案定制",
+                      "心理健康辅导",
+                      "远程定期随访安排"
+                    ].map((item, index) => (
                       <li key={index} className="flex items-center">
                         <CheckCircle className="w-5 h-5 text-[#0669f2] mr-2" />
                         <span style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>{item}</span>
@@ -188,7 +230,7 @@ export default function Component() {
                 </div>
               </div>
               <button className="mt-4 bg-[#0669f2] text-white px-6 py-3 font-semibold flex items-center hover:bg-opacity-90 transition duration-300" style={{ fontFamily: 'Moderat, sans-serif' }}>
-                了解更多关于我们的服务
+                了解更多��于我们的服务
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
             </div>
@@ -201,7 +243,7 @@ export default function Component() {
                 />
                 <div className="absolute -bottom-6 -right-6 bg-[#0669f2] text-white py-4 px-6 rounded-lg shadow-md">
                   <p className="font-semibold text-lg" style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>遍布中国的医疗网络</p>
-                  <p style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>20+诊所和医院，提供便捷本地服务</p>
+                  <p style={{ fontFamily: 'M XiangHe Hei SC, sans-serif' }}>20+和睦家医院，提供便捷本地服务</p>
                 </div>
               </div>
             </div>
