@@ -20,6 +20,8 @@ const institutions = [
   { name: 'Bumrungrad International Hospital', country: 'Thailand', imgUrl: '/images/bumrungrad-international-hospital-logo.png' },
   { name: 'Bangkok Dusit Medical Services', country: 'Thailand', imgUrl: '/images/bangkok-dusit-medical-services-logo.png' },
   { name: 'Jetanin Institute', country: 'Thailand', imgUrl: '/images/jetanin-institute-logo.png' },
+  { name: 'Integrated Oncology Centre', country: 'Hong Kong', imgUrl: '/images/ioc-logo.png' },
+  { name: 'Heal Oncology', country: 'Hong Kong', imgUrl: '/images/heal-oncology-logo.png' },
 ];
 
 const PartnerInstitutionsBanner = () => {
